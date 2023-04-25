@@ -6,11 +6,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin={
+        plugin = {
                 "html:target/failed-html-reports"
         },
         features = "@target/rerun.txt",
-        glue="com/blaze/Step_defs"
+        glue ="com/demoblaze/step_Defs"
 )
 public class FailedTestRunner {
 }

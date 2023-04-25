@@ -1,4 +1,4 @@
-package com.krafttech.utilities;
+package com.blaze.utlities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

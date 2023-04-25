@@ -1,4 +1,4 @@
-package com.krafttech.utilities;
+package com.blaze.utlities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

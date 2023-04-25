@@ -16,13 +16,9 @@ public class Hooks {
     public void setUp(){
         Driver.get().manage().window().maximize();
         Driver.get().manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
-
     }
-
     @After
     public void tearDown(Scenario scenario){
-        System.out.println("\tThis is coming from After method");
-
         if (scenario.isFailed()){
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png","screenshot");
@@ -30,14 +26,6 @@ public class Hooks {
         Driver.closeDriver();
     }
 
-//    @Before ("@db")
-//    public void setUpDB(){
-//        System.out.println("\tConnecting DB");
-//    }
-//    @After ("@db")
-//    public void tearDownDB(){
-//        System.out.println("\tDisconnecting DB");
-//    }
 
 
 }

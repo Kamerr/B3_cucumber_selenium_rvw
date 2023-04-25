@@ -1,4 +1,4 @@
-package com.krafttech.utilities;
+package com.blaze.utlities;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
@@ -7,7 +7,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 
 import java.io.File;
 import java.io.IOException;
